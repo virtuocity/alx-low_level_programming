@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+/*Main function entry point8*/
 
 int main(void)
 {
