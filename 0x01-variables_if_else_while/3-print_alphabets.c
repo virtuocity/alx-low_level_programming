@@ -27,7 +27,5 @@ int main(void)
 		putchar(uppera);
 		uppera++;
 	}
-	putchar('\n');
-
 	return (0);
 }
