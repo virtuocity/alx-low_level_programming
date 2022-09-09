@@ -18,13 +18,13 @@ int main(void)
 	/*if else stt to check value of random int n*/
 	if (lastDigit > 5)
 	{
-		printf("The last digit of %d is %d\n and is greater than 5", n,lastDigit);
+		printf("The last digit of %d is %d and is greater than 5\n", n,lastDigit);
 	}
 	else if (lastDigit == 0)
 	{
-		printf("The last digit %d is %d  and is zero\n", n,lastDigit);
+		printf("The last digit of %d is %d  and is zero\n", n,lastDigit);	
 	}
-	else if (lastDigit > 0 && lastDigit < 6)
+	else if (lastDigit != 0 && lastDigit < 6)
 		printf("The last digit 0f %d is %d  and is less than 6 and not 0\n", n,lastDigit);
 	return (0);
 }
