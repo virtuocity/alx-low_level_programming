@@ -19,7 +19,6 @@ int main(void)
 		putchar(lowera);
 		lowera++;
 	}
-	putchar('\n');
 	uppera = 'A';
 	/*While loop to print upper case*/
 	while (uppera <= 'Z')
@@ -27,5 +26,6 @@ int main(void)
 		putchar(uppera);
 		uppera++;
 	}
+	putchar('\n');
 	return (0);
 }
