@@ -15,12 +15,18 @@ int main(void)
 	/* While loop to print alphabet*/
 	while (alphabet <= 'z')
 	{
-		if( alphabet == 'e')
+		if (alphabet == 'e')
+		{
 			continue;
+		}
 		else if (alphabet == 'q')
+		{
 			continue;
+		}
 		else
+		{
 			putchar(alphabet);
+		}
 		alphabet++;
 	}
 	putchar('\n');
