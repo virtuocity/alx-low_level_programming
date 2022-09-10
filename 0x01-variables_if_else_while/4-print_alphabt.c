@@ -7,25 +7,13 @@
 */
 int main(void)
 {
-	char alphabet;
+	char c;
 
-	alphabet = 'a';
-	/* While loop to print alphabet*/
-	while (alphabet <= 'z')
+	/* For loop to print alphabet*/
+	for (c = 'a' ; c <= 'z'; c++)
 	{
-		if (alphabet == 'e')
-		{
-			continue;
-		}
-		else if (alphabet == 'q')
-		{
-			continue;
-		}
-		else
-		{
-			putchar(alphabet);
-		}
-		alphabet++;
+		if(c != 'e' && c!= 'q')
+			putchar(c);
 	}
 	putchar('\n');
 	return (0);
