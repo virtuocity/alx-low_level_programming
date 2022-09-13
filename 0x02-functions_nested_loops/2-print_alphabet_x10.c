@@ -5,8 +5,7 @@
  *@void: no parameters
  *
  * A function that prints alphabet x10
- * Return: on success 1
- * ON 
+ * Return: void
  */
 void print_alphabet_x10(void)
 {
