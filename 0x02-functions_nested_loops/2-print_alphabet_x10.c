@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_alphabetx10 - x10 - x10 - x10 - x10 - x10 - x10 - x10 - x10 - x10 - print a-z
+ *print_alphabetx10 - print a-z
  *@void: no parameters
  *
  * Return: on success 1
