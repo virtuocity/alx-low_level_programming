@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * Print alphabet a-z
+ *print_alphabet-print a-z
+ *@void: no parameters
  *
- * Return: void
+ * Return: on success 1
+ * No parameters
  */
 void print_alphabet(void)
 {
