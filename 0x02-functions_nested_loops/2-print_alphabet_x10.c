@@ -4,8 +4,9 @@
  *print_alphabetx10 - print a-z
  *@void: no parameters
  *
+ * A function that prints alphabet x10
  * Return: on success 1
- * No parameters
+ * ON 
  */
 void print_alphabet_x10(void)
 {
