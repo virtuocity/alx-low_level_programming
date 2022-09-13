@@ -2,17 +2,16 @@
 
 /**
  * _abs - print the absolute of a number
- * @int: number whose abs value to be printed 
+ * @n: number whose abs value to be printed
  *
- *Return: int 
- *-1 and prints - if n is less than 0
+ *Return: absolute value of n
  * On error, -1 is returned, and errno is set appropriately.
  */
 int _abs(int n)
 {
 	if (n > 0)
-		return n;
+		return (n);
 	else
-		return -1*n;
+		return (-1 * n);
 
 }
