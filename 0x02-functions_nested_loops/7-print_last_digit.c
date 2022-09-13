@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit - print the last digit of a number
- * @n:input number 
+ * @n:input number
  *
  *Return: the last number
  * On error, -1 is returned, and errno is set appropriately.
