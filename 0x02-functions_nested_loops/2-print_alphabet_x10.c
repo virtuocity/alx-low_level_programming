@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *print_alphabetx10 - print a-z
- *@void: no parameters
+ *  * print_alphabet_x10 - writes the alphabet x10
+ * @void: print alpahbet 10x
  *
- * A function that prints alphabet x10
- * Return: void
+ *Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 void print_alphabet_x10(void)
 {
