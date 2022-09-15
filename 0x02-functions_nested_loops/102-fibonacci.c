@@ -19,17 +19,18 @@ int main(void)
  */
 void printFibonacci(int n)
 {
-	int fib1,fib2,next,i;
+	long fib1,fib2,next;
+	int i;
 
 	fib1 = 1;
 	fib2 = 2;
 
 	if (n < 1)
 		return;
-	printf("%d, ", fib1);
+	printf("%li, ", fib1);
 	for (i = 1; i < n;i++)
 	{
-		printf("%d, ", fib2); 
+		printf("%li, ", fib2); 
 		next = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = next;
