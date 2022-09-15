@@ -1,6 +1,17 @@
 #include <stdio.h>
 #include "main.h"
 
+/* main- program entry point 
+ *
+ *@void: no input
+ * Return: 0 on success, 1 otherwise on failure
+ */
+int main(void)
+{
+	printFibonacci(50);
+	return (0);
+}
+
 /* printFibonacci-recursively print first 50 fibonacci numbers
  *
  * @n: number of fibonacci digits
