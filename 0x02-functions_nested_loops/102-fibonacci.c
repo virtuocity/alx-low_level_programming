@@ -30,7 +30,8 @@ void printFibonacci(int n)
 	for (i = 1; i < n;i++)
 	{
 		printf("%d, \n", fib2);
-		int next = fib1 + fib2;
+		int next; 
+		next = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = next;
 	}
