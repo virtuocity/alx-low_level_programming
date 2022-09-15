@@ -19,7 +19,7 @@ int main(void)
  */
 void printFibonacci(int n)
 {
-	int fib1,fib2,i;
+	int fib1,fib2,next,i;
 
 	fib1 = 1;
 	fib2 = 2;
@@ -29,8 +29,7 @@ void printFibonacci(int n)
 	printf("%d, \n", fib1);
 	for (i = 1; i < n;i++)
 	{
-		printf("%d, \n", fib2);
-		int next; 
+		printf("%d, \n", fib2); 
 		next = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = next;
