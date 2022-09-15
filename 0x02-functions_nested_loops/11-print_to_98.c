@@ -11,7 +11,17 @@ void print_to_98(int n)
 	{
 		while (n <= 98)
 		{
-			_putchar(n);
+			if(n < 10))
+			{
+			_putchar(n + '0' );
+			}
+			else if (n > 10)
+			{
+				if( (n/10) < 10)
+
+			}
+
+				
 			if (n != 98)
 			{
 				_putchar(',');
