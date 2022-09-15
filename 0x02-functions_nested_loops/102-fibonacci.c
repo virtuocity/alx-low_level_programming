@@ -28,10 +28,9 @@ void printFibonacci(int n)
 	if (n < 1)
 		return;
 	printf("%li, ", fib1);
-	for (i = 1; i < n;i++)
+	for (i = 2; i <=n;i++)
 	{
-		printf("%li, ", fib2);
-		if (i < n )
+		if (i == n )
 		{
 			printf("%li", fib2);
 		}
