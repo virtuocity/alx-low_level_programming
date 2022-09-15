@@ -10,15 +10,15 @@ void printFibonacci(int n)
 {
 	int fib1,fib2,i;
 
-	fib1 = 0;
+	fib1 = 1;
 	fib2 = 1;
 
 	if (n < 1)
 		return;
-	printf("%d,", fib1);
+	printf("%d, \n", fib1);
 	for (i = 1; i < n;i++)
 	{
-		printf("%d,", fib2);
+		printf("%d, \n", fib2);
 		int next = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = next;
