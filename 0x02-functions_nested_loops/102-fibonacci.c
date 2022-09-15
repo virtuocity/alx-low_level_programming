@@ -22,7 +22,7 @@ void printFibonacci(int n)
 	int fib1,fib2,i;
 
 	fib1 = 1;
-	fib2 = 1;
+	fib2 = 2;
 
 	if (n < 1)
 		return;
