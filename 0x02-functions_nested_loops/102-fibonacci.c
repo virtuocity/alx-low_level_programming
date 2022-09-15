@@ -26,14 +26,15 @@ void printFibonacci(int n)
 
 	if (n < 1)
 		return;
-	printf("%d, \n", fib1);
+	printf("%d, ", fib1);
 	for (i = 1; i < n;i++)
 	{
-		printf("%d, \n", fib2); 
+		printf("%d, ", fib2); 
 		next = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = next;
 	}
+	printf("\n");
 }
 
 
