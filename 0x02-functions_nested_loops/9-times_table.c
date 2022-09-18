@@ -7,21 +7,38 @@
  */
 void times_table(void)
 {
-	int i, j, product;
+	int i;
+	int j;
+	int mult;
 
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			product = i * j;
-			if (j < 9)
+			mult = i * j;
+			if (mult > 9)
 			{
-				printf("%2d, ", product);
+				_putchar((mult / 10) + '0');
+				_putchar((mult % 10) + '0');
 			}
 			else
-				printf("%d", product);
+			{
+				if (j == 0)
+				{
+					_putchar(mult + '0');
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar(mult + '0');
+			}
+			}
+			if (j != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
-		printf("\n");
+		_putchar ('\n');
 	}
 }
-

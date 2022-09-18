@@ -8,8 +8,8 @@
  * Return: void
  */
 void print_times_table(int n)
-{ 
-	int i,j,product;
+{
+	int i, j, product;
 
 	if ((n < 0) || (n >= 15))
 	{
@@ -19,10 +19,9 @@ void print_times_table(int n)
 	{
 		for (i = 0; i <= n; i++)
 		{
-		
 			for (j = 0; j <= n; j++)
 			{
-				product = i*j;
+				product = i * j;
 				if (j < n)
 				{
 					printf("%d,\t", product);
@@ -32,6 +31,5 @@ void print_times_table(int n)
 			}
 			printf("\n");
 		}
-		
 	}
 }
