@@ -28,7 +28,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		lencat = i + n;
 	}
-	else 
+	else
 		lencat = 1 + 100;
 	j = 0;
 	while (i < lencat)
