@@ -4,7 +4,7 @@
   *_strchr - locates a character in a string
   *
   *@s: string to search
-  *@c: char to look for 
+  *@c: char to look for
   *Return: located string
   */
 char *_strchr(char *s, char c)
@@ -15,7 +15,7 @@ char *_strchr(char *s, char c)
 
 	while (*(s + i) != '\0')
 	{
-		if(s[i] == c)
+		if (s[i] == c)
 		{
 			return (&(s[i]));
 		}
