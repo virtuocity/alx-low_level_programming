@@ -4,7 +4,7 @@
  *_strstr- finds first occurence of substring needle in
  *the string haystack
  *
- *@haystach: search string
+ *@haystack: search string
  *@needle: substring to search in haystack
  * Return: pointer to beginnning of located substr
  */
