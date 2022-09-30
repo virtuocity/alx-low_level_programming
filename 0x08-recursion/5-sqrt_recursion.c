@@ -15,9 +15,9 @@ int compare(int n, int x)
 		return (-1);
 	return (compare(n, x + 1));
 }
+
 /*
- *_sqrt_recursion
- *
+ *_sqrt_recursion - find square root of a number
  *@n: look for sqrt of n
  *Return: squareroot
  */
