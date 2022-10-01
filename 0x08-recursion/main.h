@@ -3,6 +3,7 @@
 #define MAIN_H
 #include <stdio.h>
 
+int is_prime_check(int n,int i);
 int compare(int n,int x);
 int is_prime_number(int n);
 int _sqrt_recursion(int n);
