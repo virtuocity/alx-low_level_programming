@@ -1,4 +1,4 @@
-#Arguments to Main
+# Arguments to Main
 ## Notes and Thoughts
 arguments to main provide a useful opportunity to give parameters to programs
 It's particularly common to provide file names to a program through its arguments.
