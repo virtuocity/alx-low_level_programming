@@ -32,3 +32,6 @@ argv[0] will be a string containing the program's name or a null string if that 
 Remaining elements of argv represent the arguments supplied to the program. In cases where there is only 
 support for single-case characters, the contents of these strings will be supplied to the program in 
 lower-case
+
+* This is bold *
+** This is italicised **
