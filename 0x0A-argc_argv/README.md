@@ -33,5 +33,5 @@ Remaining elements of argv represent the arguments supplied to the program. In c
 support for single-case characters, the contents of these strings will be supplied to the program in 
 lower-case
 
-*This is bold*
-**This is italicised**
+# Tasks
+## 0. Write a program that prints its name, followed by a new line.
