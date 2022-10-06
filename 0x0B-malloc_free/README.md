@@ -12,9 +12,9 @@ char * arr = NULL;
 **ALWAYS INITIALISE ARRAY TO NULL AND OTHER VARS TOO-GOOD CODING PRACTISE**
 ## TASKS
 ### 0. Write a function that creates an array of chars, and initializes it with a specific char.
-1.Prototype: char *create_array(unsigned int size, char c);  
-2.Returns NULL if size = 0  
-3.Returns a pointer to the array, or NULL if it fails 
++ Prototype: char *create_array(unsigned int size, char c);  
++ Returns NULL if size = 0  
++ Returns a pointer to the array, or NULL if it fails 
 ### Write a function that returns a pointer to a newly allocated space in memory, which contains a copy of the  
 ### string given as a parameter.  
 + Prototype: char *_strdup(char *str);  
