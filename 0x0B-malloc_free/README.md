@@ -7,4 +7,12 @@ location in the storage.This means that it points to the address of variables. I
 purpose pointer.  
 
 The malloc() function allocates size bytes and returns a pointer to the allocated
-memory  
+memory 
+char * arr = NULL;
+*ALWAYS INITIALISE ARRAY TO NULL AND OTHER VARS TOO-GOOD CODING PRACTISE*
+## TASKS
+### 0. Write a function that creates an array of chars, and initializes it with a specific char.
+-Prototype: char *create_array(unsigned int size, char c);  
+-Returns NULL if size = 0  
+-Returns a pointer to the array, or NULL if it fails 
+
