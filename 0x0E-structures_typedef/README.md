@@ -2,9 +2,11 @@
 ## Notes And Thoughts
 A structure is a user defined data type available in C that allows to combine data items of  
 different kinds.  
+
 **NB: itis a composite data type (or record) declaration that defines a physically grouped list of  
 variables under one name in a block of memory, allowing the different variables to be accessed via   
 a single pointer or by the struct declared name which returns the same address.**  
+  
 You can define a structure in the global scope of your program (outside of all your functions,  
 just like the functions prototypes).  
 ### Pointer to Structures
