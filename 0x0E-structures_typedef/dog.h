@@ -3,6 +3,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+  *struct dog - a collection of records for dogs
+  *
+  *@name:name of dog
+  *@age: age of dog
+  *@owner:dog owner's name
+  *
+  *Description: stores the records of a dog
+  */
+
 struct dog
 {
 	char *name;
