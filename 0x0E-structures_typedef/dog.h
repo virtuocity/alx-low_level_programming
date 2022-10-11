@@ -16,6 +16,11 @@ typedef struct dog
 {
 	char *name;
 	float age;
+	/**
+	 * @owner: char * a string that is the owner;s
+	 * name
+	 * Description: string name of owner
+	 */
 	char *owner;
 }dog;
 void init_dog(struct dog *d, char *name, float age, char *owner);
