@@ -4,13 +4,12 @@
 #include <stdlib.h>
 
 /**
-  *struct dog - a collection of records for dogs
+  *struct dog - initialize struct dog
+  *@name:name type char
+  *@age: age type float
+  *@owner:dog owner's name type char
   *
-  *@name:name of dog
-  *@age: age of dog
-  *@owner:dog owner's name
-  *
-  *Description: stores the records of a dog
+  *Description: name, age and owner of a dog
   */
 
 typedef struct dog
