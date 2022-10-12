@@ -6,8 +6,8 @@ prototype: void * malloc(size_t size);
 location in the storage.This means that it points to the address of variables. It is also called the general  
 purpose pointer.  
 
-The malloc() function allocates size bytes and returns a pointer to the allocated
-memory 
+The malloc() function allocates size bytes and returns a pointer to the allocated memory. This memory will have  
+read and write permissions.  
 
 	char * arr = NULL;  
 
