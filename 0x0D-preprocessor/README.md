@@ -22,4 +22,8 @@ the loaded DLL is included thus reducing exe file size.
 
 ## Tasks
 
-## Links
+## Links 
+https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Macro-Arguments.html#Macro-Arguments  
+https://www.scaler.com/topics/c/compilation-process-in-c/  
+https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Object-like-Macros.html#Object-like-Macros  
+https://www.youtube.com/watch?v=X6HiYbY3Uak&ab_channel=BestDotNetTraining   
