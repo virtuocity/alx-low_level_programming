@@ -5,8 +5,8 @@
 Preprocessor tool helps in comments removal, macros expansion (what are macros?- are constants), file inclusion,  
 Macros are some constant values or expressions defined using the #define directives in C Language. A macro call  
 leads to macro expansion. Matching tokens - pre-writen assembly level instructions replace macros  
-		#define G 9.8  
-		#define SUM(a,b) (a + b)  
+		#define G 9.8;  
+		#define SUM(a,b) (a + b);  
 ## Tasks
 
 ## Links
