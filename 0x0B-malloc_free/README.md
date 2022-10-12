@@ -16,7 +16,13 @@ read and write permissions.
 	char *s = "HOLBERTON";// is read-only i.e is immutable  
 	char s[] = "Holberton"; // is mutable  
 
-The array s holds a copy of the string "Holberton". So it is possible to modify this copy  
+The array s holds a copy of the string "Holberton". So it is possible to modify this copy.  
+The free function frees the memory space which have been allocated by a previous call to malloc  
+  
++ Prototype: void free(void *ptr);  
++ where ptr is the address of the memory space previously allocated by and returned by a call to malloc  
+
+
 
 ## TASKS
 ### 0. Write a function that creates an array of chars, and initializes it with a specific char.
