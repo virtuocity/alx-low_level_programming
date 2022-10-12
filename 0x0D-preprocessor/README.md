@@ -17,6 +17,7 @@ You can use a macro like a function:
 	#define SQR(X) X*X  
 	int n = SQR(10);  
 
+There are predeined system macros such as _FILE_ _TIME_ _DATE_ _STDC_  
 In static linking , entire object files are included whereas in dynamic linking ,only the address in memory of  
 the loaded DLL is included thus reducing exe file size.   
 
