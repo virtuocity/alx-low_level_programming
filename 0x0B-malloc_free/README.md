@@ -8,8 +8,16 @@ purpose pointer.
 
 The malloc() function allocates size bytes and returns a pointer to the allocated
 memory 
-char * arr = NULL;  
-**ALWAYS INITIALISE ARRAY TO NULL AND OTHER VARS TOO-GOOD CODING PRACTISE**
+
+	char * arr = NULL;  
+
+**ALWAYS INITIALISE ARRAY TO NULL AND OTHER VARS TOO-GOOD CODING PRACTISE**  
+	
+	char *s = "HOLBERTON";// is read-only i.e is immutable  
+	char s[] = "Holberton"; // is mutable  
+
+The array s holds a copy of the string "Holberton". So it is possible to modify this copy  
+
 ## TASKS
 ### 0. Write a function that creates an array of chars, and initializes it with a specific char.
 + Prototype: char *create_array(unsigned int size, char c);  
