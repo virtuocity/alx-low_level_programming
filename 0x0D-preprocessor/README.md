@@ -13,8 +13,10 @@ leads to macro expansion. Matching tokens - pre-writen assembly level instructio
 	#define G 9.8
 	#define SUM(a,b) (a + b)  
 You can use a macro like a function:  
+
 	#define SQR(X) X*X  
 	int n = SQR(10);  
+
 In static linking , entire object files are included whereas in dynamic linking ,only the address in memory of  
 the loaded DLL is included thus reducing exe file size.   
 
