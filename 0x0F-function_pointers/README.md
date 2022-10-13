@@ -1,4 +1,5 @@
-# Notes and Thoughts
+# 0x0F. C - Function pointers
+## Notes and Thoughts
 
 	#include <stdio.h>  
 	// A normal function with an int parameter  
@@ -31,7 +32,7 @@
 + Unlike normal pointers, we do not allocate de-allocate memory using function pointers.  
 + A function’s name can also be used to get functions’ address.  
   
-# Tasks
+## Tasks
 
-# Links 
+## Links 
 https://www.geeksforgeeks.org/function-pointer-in-c/  
