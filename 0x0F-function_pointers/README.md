@@ -1,6 +1,6 @@
 # 0x0F. C - Function pointers
 ## Notes and Thoughts
-
+Function pointers
 	#include <stdio.h>  
 	// A normal function with an int parameter  
 	// and void return type  
@@ -31,7 +31,8 @@
  stores the start of executable code.  
 + Unlike normal pointers, we do not allocate de-allocate memory using function pointers.  
 + A function’s name can also be used to get functions’ address.  
-  
++ Like normal data pointers, a function pointer can be passed as an argument and can also be returned  
+ from a function.  
 ## Tasks
 
 ## Links 
