@@ -2,8 +2,8 @@
 /**
  *free_grid - Deallocate memory for 2D int grid
  *
- * @grid: matrix of integers 
- * @height: height of matrix 
+ * @grid: matrix of integers
+ * @height: height of matrix
  * Return: void
  */
 void free_grid(int **grid, int height)
