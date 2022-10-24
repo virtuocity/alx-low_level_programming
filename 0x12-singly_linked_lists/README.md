@@ -4,7 +4,7 @@ A singly linked list is a data structure.
 A data structure is a way of structuring data in order to efficiently store, find, use and create data  
 depending on the task at hand.  
 Unlike arrays, linked lists are not stored at contiguous memory locations.  
-* Advantages of linked lists over arrays *  
+*Advantages of linked lists over arrays*  
 + It is dynamic  
 + Ease of insertion or deletion.  
 ## Tasks
