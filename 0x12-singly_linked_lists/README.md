@@ -12,4 +12,5 @@ https://www.tutorialspoint.com/data_structures_algorithms/data_structures_basics
 https://www.geeksforgeeks.org/data-structures/  
 How to Select the Appropriate Data Structure:  
 https://www.careerdrill.com/blog/coding-interview/choosing-the-right-data-structure-to-solve-problems/  
-
+CS50x , week 5 on singly linked lists:  
+https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@01f55e1d753946868dd97799db5e2649/block-v1:HarvardX+CS50+X+type@vertical+block@f9e682442c9d499b8ace799fbc275647  
