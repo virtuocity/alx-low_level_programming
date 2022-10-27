@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * *add_node - add the first node in a linked lis_t list.
+ * add_node - add a new node to the beginning of a SLL
  * @head: Address of first element of the list
- *@str: pointer to string we want to print
- * Return: the address of the new element
+ *@str: string to be put in the new node
+ * Return: the address of the new node
  */
 list_t *add_node(list_t **head, const char *str)
 {
