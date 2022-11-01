@@ -1,10 +1,12 @@
 #ifndef MAIN_H
 #define MINA_H
 
+#include <string.h>
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
+unsigned int _pow(unsigned int num, unsigned int n);
 unsigned int binary_to_uint(const char *b);
 
 #endif /* MAIN_H */
