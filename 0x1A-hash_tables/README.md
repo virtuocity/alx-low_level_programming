@@ -8,9 +8,11 @@ The *Hash function* looks at a key and spits out what index it's going to store 
     hash(key) -> index
 
 ## Links
-+ What is a HashTable Data Structure - Introduction to Hash Tables , Part 0
-https://www.youtube.com/watch?v=MfhjkfocRR0
-+ Hash Tables and Hash Functions
-https://www.youtube.com/watch?v=KyUTuwz_b7Q
-+ Hash Tables - CS50 Shorts
-https://www.youtube.com/watch?v=nvzVHwrrub0
++ What is a HashTable Data Structure - Introduction to Hash Tables , Part 0  
+https://www.youtube.com/watch?v=MfhjkfocRR0  
++ Hash Tables and Hash Functions  
+https://www.youtube.com/watch?v=KyUTuwz_b7Q  
++ Hash Tables - CS50 Shorts  
+https://www.youtube.com/watch?v=nvzVHwrrub0  
++ Hash Function - Wikipedia  
+https://en.wikipedia.org/wiki/Hash_function  
