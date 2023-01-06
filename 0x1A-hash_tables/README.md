@@ -4,9 +4,8 @@ A hash table is  a data structure that is used to store information. IN key - va
 Mapping of key-value pairs is done using a hash function.
 The *Hash function* looks at a key and spits out what index it's going to store the info(key or value, or both??)  
 
-    ```c
-hash(key) -> index
-```
+
+    hash(key) -> index
 
 ## Links
 + What is a HashTable Data Structure - Introduction to Hash Tables , Part 0
