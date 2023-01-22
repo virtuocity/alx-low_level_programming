@@ -1,15 +1,21 @@
 #include "sort.h"
 
 /**
+ * bubble_sort - sort an array using bubble sort
+ * algo
  * 
- * 
+ * @array: array to sort
+ * @size: size of array
+ * Return: void , just print each iteration of sorting
  */
 void bubble_sort(int *array, size_t size)
 {
     unsigned int i;
     unsigned int j;
     if (!array || !size || size == 1)
+    {
         return;
+    }
     
     for (i = 0; i < size; i++)
     {
