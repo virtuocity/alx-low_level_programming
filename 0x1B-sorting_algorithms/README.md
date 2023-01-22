@@ -31,6 +31,12 @@ If you have 3 towns A, B, and C with roads between all pairs then you could go:
 + B → A → C
 + C → A → B
 + C → B → A
+
+Take this to 4 towns and you have 12 possibilities.
+With 5 it's 60.
+6 becomes 360
+This makes a factorial or combinatorial complexity:   
+**O(n!)**  
 ## Links
 + Sorting Algorithm  
 https://en.wikipedia.org/wiki/Sorting_algorithm  
