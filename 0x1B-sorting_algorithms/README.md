@@ -10,21 +10,27 @@ Big Oh notation is a relative representation of the complexity of an algorithm.
 + representation: BigOh (in its simplest form) reduces the comparison between algorithms to a single variable. That variable is chosen based on observations or assumptions. For example, sorting algorithms are typically compared based on comparison operations (comparing two nodes to determine their relative ordering). This assumes that comparison is expensive. But what if the comparison is cheap but swapping is expensive? It changes the comparison; and 
 + complexity: if it takes me one second to sort 10,000 elements, how long will it take me to sort one million? Complexity in this instance is a relative measure to something else.
 
-O(n) - Linear complexity as in when traversing a list
-O(n²) - Quadratic complexity as in a nested loop or calculating n*n
-O(logn) - when halving a problem e.g binary search. 
-    In BigOh terms this is O(log n) or **logarithmic complexity**. Now the logarithm in question could be ln (base e), log10, log2 or some other base. It doesn't matter it's still O(log n) just like O(2n2) and O(100n2) are still both O(n2).
+O(n) - Linear complexity as in when traversing a list  
+O(n²) - Quadratic complexity as in a nested loop or calculating n*n  
+O(logn) - when halving a problem e.g binary search.   
+    In BigOh terms this is O(log n) or **logarithmic complexity**. Now the logarithm in question could be ln (base e), log10, log2 or some other base. It doesn't matter it's still O(log n) just like O(2n2) and O(100n2) are still both O(n2).  
 It's worthwhile at this point to explain that BigOh can be used to determine three cases with an algorithm:  
-+ Best Case: In the telephone book search, the best case is that we find the name in one comparison. This is O(1) or **constant complexity**;
++ Best Case: In the telephone book search, the best case is that we find the name in one comparison. This is O(1) or **constant complexity**;  
 + Expected/Average Case: As discussed above this is O(log n); and
 Worst Case: This is also O(log n).
 ### The Traveling Salesman
 This is quite a famous problem in computer science and deserves a mention. In this problem, you have N towns. Each of those towns is linked to 1 or more other towns by a road of a certain distance. The Traveling Salesman problem is to find the shortest tour that visits every town.
 
-Sounds simple? Think again.
+Sounds simple? Think again.  
 
 If you have 3 towns A, B, and C with roads between all pairs then you could go:  
-d
+
++ A → B → C
++ A → C → B
++ B → C → A
++ B → A → C
++ C → A → B
++ C → B → A
 ## Links
 + Sorting Algorithm  
 https://en.wikipedia.org/wiki/Sorting_algorithm  
