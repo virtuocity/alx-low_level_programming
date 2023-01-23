@@ -43,7 +43,52 @@ Is a divide and conquer algorithm
 The key process in quickSort is a **partition()**. The target of partitions is, given an array and an element x of an array as the pivot, put x at its correct position in a sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time.  
 
 ### Pseudo Code for recursive QuickSort function:
-/* low  –> Starting index,  high  –> Ending index */  
+/* low  –> Starting ,  high  –> Ending index array*/ 
+```c
+quickSort(arr[], low, high) {  
+    if (low < high) {  
+
+        /* pi is partitioning index, arr[pi] is now at right place */  
+
+        pi = partition(arr, low, high);  
+
+        quickSort(arr, low, pi – 1);  // Before pi    
+
+        quickSort(arr, pi + 1, high); // After pi
+
+    }
+
+}
+```
+
+### Pseudo code for partition()  
+
+/* This function takes last element as pivot, places the pivot element at its correct position in sorted array, and places all smaller (smaller than pivot) to left of pivot and all greater elements to right of pivot */
+
+```c
+partition (arr[], low, high)
+{
+    // pivot (Element to be placed at right position)
+    pivot = arr[high];  
+
+    i = (low – 1)  // Index of smaller element and indicates the 
+    // right position of pivot found so far
+
+    for (j = low; j <= high- 1; j++){
+
+        // If current element is smaller than the pivot
+        if (arr[j] < pivot){
+            i++;    // increment index of smaller element
+            swap arr[i] and arr[j]
+        }
+    }
+    swap arr[i + 1] and arr[high])
+    return (i + 1)
+}
+```
+### Lomuto’s Partition Scheme - In Quicksort:
+
+This algorithm works by assuming the pivot element as the last element. If any other element is given as a pivot element then swap it first with the last element. 
 
 
 ## Links
