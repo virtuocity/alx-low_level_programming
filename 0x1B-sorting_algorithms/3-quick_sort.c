@@ -2,33 +2,35 @@
 
 /**
  * swap - a utility function to swap two elements
- * 
- * @a: first element 
+ *
+ * @a: first element
  * @b: second element
- * Return: void 
+ * Return: void
  */
-void swap(int* a, int* b)
+void swap(int *a, int *b)
 {
-    int t = *a;
+    int tmp;
+
+    tmp = *a;
     *a = *b;
-    *b = t;
+    *b = tmp;
 }
+
 /**
- * partition - place pivot and swap items 
- * 
- * @array: input array 
+ * partition - place pivot and swap items
+ *
+ * @array: input array
  * @low: low index to the left
- * @high: high index to the right 
- * @size: size of array 
+ * @high: high index to the right
+ * @size: size of array
  * Return: int which is pivot
  */
-
 int partition(int *array, ssize_t low, ssize_t high, size_t size)
 {
     int pivot = array[high];
     ssize_t j = low, i;
 
-    for (i = low; low < high; i++)
+    for (i = low; i < high; i++)
     {
         if (array[i] < pivot)
         {
@@ -37,31 +39,30 @@ int partition(int *array, ssize_t low, ssize_t high, size_t size)
                 swap(&array[j], &array[i]);
                 print_array(array, size);
             }
+
             j++;
         }
     }
+
     if (high != j && array[high] != array[j])
     {
-        swap(array[high], array[j]);
+        swap(&array[high], &array[j]);
         print_array(array, size);
     }
 
     return (j);
-
 }
 
-
-
 /**
- * quicksort - recursive quicksort function
- * 
- * @array - input array 
- * @low: low index 
- * @high: high index 
+ * quicksort - recursive quicksort function with extra
+ * parameters
+ *
+ * @array - input array
+ * @low: low index
+ * @high: high index
  * @size: size of array
- * Return: void 
+ * Return: void
  */
-
 void quicksort(int *array, ssize_t low, ssize_t high, size_t size)
 {
     if (low < high)
@@ -72,12 +73,13 @@ void quicksort(int *array, ssize_t low, ssize_t high, size_t size)
         quicksort(array, pivot + 1, high, size);
     }
 }
+
 /**
- * @quick_sort - sort an array using quick sort algo
+ * quick_sort - quick sort algo
+ * @array: The array to be sorted
+ * @size: Number of elements in @array
  *
- * @param array: array to sort
- * @param size: size of array
- * Return: void just print sorted array
+ * Return: void
  */
 void quick_sort(int *array, size_t size)
 {
