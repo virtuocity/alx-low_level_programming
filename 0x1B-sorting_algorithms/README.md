@@ -90,6 +90,9 @@ partition (arr[], low, high)
 
 This algorithm works by assuming the pivot element as the last element. If any other element is given as a pivot element then swap it first with the last element. 
 
+### Hoare’s Partition Scheme:
+works by initializing two indexes that start at two ends, the two indexes move toward each other until an inversion is (A smaller value on the left side and greater value on the right side) found. When an inversion is found, two values are swapped and the process is repeated.
+
 
 ## Links
 + Sorting Algorithm  
