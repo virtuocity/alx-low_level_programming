@@ -37,6 +37,15 @@ With 5 it's 60.
 6 becomes 360
 This makes a factorial or combinatorial complexity:   
 **O(n!)**  
+
+### Quicksort Algorithm
+Is a divide and conquer algorithm  
+The key process in quickSort is a **partition()**. The target of partitions is, given an array and an element x of an array as the pivot, put x at its correct position in a sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time.  
+
+### Pseudo Code for recursive QuickSort function:
+/* low  –> Starting index,  high  –> Ending index */  
+
+
 ## Links
 + Sorting Algorithm  
 https://en.wikipedia.org/wiki/Sorting_algorithm  
