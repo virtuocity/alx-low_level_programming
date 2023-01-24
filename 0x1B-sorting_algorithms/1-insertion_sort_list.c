@@ -15,7 +15,7 @@ void swap_one(listint_t *tprev, listint_t *tnext)
     tprev->next = tnext->next;
     tnext->prev = tprev->prev;
     tprev->prev = tnext;
-    tnext->next = tnext;
+    tnext->next = tprev;
 }
 
 /**
