@@ -1,10 +1,10 @@
 #include "main.h"
 /*
- *argstostr- concatenate arguments
- *@ac: argument count
- *@av: argument vector
- * Return: New concatenated string of args
- */
+*argstostr- concatenate arguments
+*@ac: argument count
+*@av: argument vector
+*Return: New concatenated string of args
+*/
 char *argstostr(int ac, char **av)
 {
     char *c;
