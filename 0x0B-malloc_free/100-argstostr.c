@@ -1,9 +1,10 @@
 #include "main.h"
-/*
-*argstostr - concatenate arguments
-*@ac: argument count
-*@av: argument vector
-*Return: New concatenated string of args
+/**
+ *argstostr-concatenate arguments
+ *
+ *@ac: argument count
+ *@av: argument vector
+ *Return: New concatenated string of args
 */
 char *argstostr(int ac, char **av)
 {
@@ -17,13 +18,13 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
-        	{
-            		len++;
-        	}
-    	}
+		{
+			len++;
+		}
+	}
 	c = (char *)malloc(len + ac + 1 * sizeof(char));
 	if (c == NULL)
-        	return (NULL);
+		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
