@@ -21,7 +21,7 @@ char **strtow(char *str)
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		/* count number of words */
-		if ((str[i] != ' ' && str[i + 1] != ' ') || (str[i + 1] == '\0'))
+		if (str[i] == ' ' && (str[i + 1] != ' ' || str[i + 1] == '\0'))
 		{
 			lenw++;
 		}
