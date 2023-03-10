@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
   * main - command line arguments
@@ -10,9 +11,8 @@
   */
 int main(int ac, char **av)
 {
-	long num1 = 0;
-	long num2 = 0;
-	long mul = 0;
+	int i, j;
+	long int mul = 0;
 
 	if (ac != 3)
 	{
@@ -20,9 +20,18 @@ int main(int ac, char **av)
 		printf("Usage: mul num1 num2\n");
 		exit(98);
 	}
-	num1 = (long)atoi(av[1]);
-	num2 = (long)atoi(av[2]);
-	mul = num1 * num2;
+	for (i = 1; i < ac; i++)
+	{
+		for (j = 0; av[i][j] != '\0'; j++)
+		{
+			if (!(isdigit(av[i][j])))
+			{
+				printf("Error\n");
+				exit(98);
+			}
+		}
+	}	
+	mul = atoi(av[1]) * atoi(av[2]);
 	printf("%ld\n", mul);
 	return (0);
 }
