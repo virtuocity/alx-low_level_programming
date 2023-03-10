@@ -30,7 +30,7 @@ int main(int ac, char **av)
 				exit(98);
 			}
 		}
-	}	
+	}
 	mul = atoi(av[1]) * atoi(av[2]);
 	printf("%ld\n", mul);
 	return (0);
