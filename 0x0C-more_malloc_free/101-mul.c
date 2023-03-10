@@ -31,7 +31,7 @@ int main(int ac, char **av)
 			}
 		}
 	}
-	mul = atoi(av[1]) * atoi(av[2]);
+	mul =(long int)atoi(av[1]) * (long int)atoi(av[2]);
 	printf("%ld\n", mul);
 	return (0);
 }
