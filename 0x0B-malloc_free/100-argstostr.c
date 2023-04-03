@@ -1,6 +1,6 @@
 #include "main.h"
 /*
-*argstostr- concatenate arguments
+*argstostr - concatenate arguments
 *@ac: argument count
 *@av: argument vector
 *Return: New concatenated string of args
