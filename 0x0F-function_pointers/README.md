@@ -1,7 +1,6 @@
 # 0x0F. C - Function pointers
 ## Notes and Thoughts
 
-	```c
 	#include <stdio.h>  
 	// A normal function with an int parameter  
 	// and void return type  
@@ -25,7 +24,7 @@
     
     		return 0;  
 	}  
-	```
+
 
 *Following are some interesting facts about function pointers.*  
 
