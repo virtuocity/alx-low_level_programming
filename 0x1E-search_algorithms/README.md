@@ -11,7 +11,7 @@ Specific applications of search algorithms include:
     + The [nurse scheduling problem](https://en.wikipedia.org/wiki/Nurse_scheduling_problem)
 + Problems in [constraint satisfaction](https://en.wikipedia.org/wiki/Constraint_satisfaction), such as:
     + The [map coloring problem](https://en.wikipedia.org/wiki/Map_coloring_problem)
-    + Filling in a [sudoku or crossword puzzle
+    + Filling in a [sudoku]() or crossword puzzle
 + In [game theory](https://en.wikipedia.org/wiki/Game_theory) and especially combinatorial game theory, choosing the best move to make next (such as with the minmax algorithm)
 + Finding a combination or password from the whole set of possibilities
 + Factoring an integer (an important problem in cryptography)
@@ -19,6 +19,15 @@ Specific applications of search algorithms include:
 + Retrieving a record from a database
 + Finding the maximum or minimum value in a list or array
 + Checking to see if a given value is present in a set of values
+
+### What does ‘Space Complexity’ mean?
+The space Complexity of an algorithm is the total space taken by the algorithm with respect to the input size. Space complexity includes both Auxiliary space and space used by input. 
+
+This space is with respect to amount of RAM(memory) assigned to variables, functions etc in the runtime of an algorithm. 
+
+Auxiliary Space is the extra space or temporary space used by an algorithm.
+
+In recursive calls stack space also counts
 ## Resources
 ### Read or watch:
 
