@@ -1,5 +1,7 @@
 # 0x1E. C - Search Algorithms
 
+## Notes
+
 ## Resources
 ### Read or watch:
 
