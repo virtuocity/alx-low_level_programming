@@ -52,6 +52,7 @@ Binary Search Algorithm can be implemented in the following two ways:
 
 1. Iteration Method
 
+ ```c
     binarySearch(arr, x, low, high)  
         repeat till low = high  
                 mid = (low + high)/2  
@@ -61,6 +62,7 @@ Binary Search Algorithm can be implemented in the following two ways:
                         low = mid + 1  
                     else                  // x is on the left side  
                         high = mid - 1  
+ ```
 ## Resources
 ### Read or watch:
 
