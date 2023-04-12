@@ -27,11 +27,47 @@ This space is with respect to amount of RAM(memory) assigned to variables, funct
 
 Auxiliary Space is the extra space or temporary space used by an algorithm.
 
-In recursive calls stack space also counts
+In recursive calls stack space also counts. 
+### Binary Search
+**Problem:** Given a sorted array arr[] of n elements, write a function to search a given element x in arr[] and return the index of x in the array. Consider array is 0 base index.
+
+    Input: arr[] = {10, 20, 30, 50, 60, 80, 110, 130, 140, 170}, x = 110
+    Output: 6
+    Explanation: Element x is present at index 6.
+
+*Binary Search* is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n). 
+
+### Pseudicode
++ Sort the array in ascending order.
++ Set the low index to the first element of the array and the high index to the last element.
++ Set the middle index to the average of the low and high indices.
++ If the element at the middle index is the target element, return the middle index.
++ If the target element is less than the element at the middle index, set the high index to the middle index – 1.
++ If the target element is greater than the element at the middle index, set the low index to the middle index + 1.
++ Repeat steps 3-6 until the element is found or it is clear that the element is not present in the array.
+
+Binary Search Algorithm can be implemented in the following two ways:  
++ Iterative Method
++ Recursive Method
+
+1. Iteration Method
+
+    binarySearch(arr, x, low, high)
+        repeat till low = high
+                mid = (low + high)/2
+                    if (x == arr[mid])
+                    return mid
+
+                    else if (x > arr[mid]) // x is on the right side
+                        low = mid + 1
+
+                    else                  // x is on the left side
+                        high = mid - 1
 ## Resources
 ### Read or watch:
 
 + [Search algorithm](https://en.wikipedia.org/wiki/Search_algorithm)
 + [Space complexity](https://www.geeksforgeeks.org/g-fact-86/)
 + [Linear Search](https://en.wikipedia.org/wiki/Linear_search)
-+ [Jenny's Linear Search Algorithm | Linear Search in C | Data Structures Tutorials](https://www.youtube.com/watch?v=C46QfTjVCNU)
++ [Jenny's Linear Search Algorithm | Linear Search in C ](https://www.youtube.com/watch?v=C46QfTjVCNU)
++ [Jenny's Lectures | Binary Search Algorithm](https://www.youtube.com/watch?v=V_T5NuccwRA)
