@@ -1,6 +1,25 @@
 #include "search_algos.h"
 
 /**
+ * printarray - print array elements
+ * 
+ * @array: array to print
+ * @low: first index of array 
+ * @high: last index of array 
+ * Return: void
+ */
+
+void printarray(int *array, size_t low, size_t high)
+{
+	printf("Searching in array: ");
+	for (low = 0; low < high; low++)
+	{
+		printf("%d, ", array[low]);
+	}	
+	printf("%d\n", array[low]);
+}
+
+/**
   *binary_search - search array using binary search algo
   *
   *@array: pointer to input array
@@ -10,28 +29,20 @@
   */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t high_idx, mid_idx, low_idx;
-	
-	low_idx = 0;
-	high_idx =size - 1;
+
+	size_t low_idx, high_idx, mid_idx;
+
 	if (array == NULL)
 		return (-1);
-	for (low_idx = 0;low_idx < size;low_idx++)
+	high_idx = size - 1;
+	for (low_idx = 0; low_idx < size;)
 	{
-		printf("Searching in array: ");
-		for(; low_idx < high_idx; low_idx++)
-		{
-			printf("%d, ", array[low_idx]);
-		}
-		printf("%d\n", array[low_idx]);
-		mid_idx =(low_idx + high_idx)/2;
-		printf("Mid index is: %ld", mid_idx);
+		printarray(array, low_idx, high_idx);
+		mid_idx = (low_idx + high_idx) / 2;
 		if (array[mid_idx] < value)
-		{
 			low_idx = mid_idx + 1;
-		}
-		else if(array[mid_idx] > value)
-			high_idx = mid_idx + 1;
+		else if (array[mid_idx] > value)
+			high_idx = mid_idx - 1;
 		else
 			return (mid_idx);
 	}
