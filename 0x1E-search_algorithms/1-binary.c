@@ -26,16 +26,14 @@ int binary_search(int *array, size_t size, int value)
 		printf("%d\n", array[low_idx]);
 		mid_idx =(low_idx + high_idx)/2;
 		printf("Mid index is: %ld", mid_idx);
-		if (array[mid_idx]== value)
-		{
-			return (mid_idx);
-		}
 		if (array[mid_idx] < value)
 		{
 			low_idx = mid_idx + 1;
 		}
-		else
+		else if(array[mid_idx] > value)
 			high_idx = mid_idx + 1;
+		else
+			return (mid_idx);
 	}
 	return (-1);
 }
