@@ -7,6 +7,25 @@ Unlike arrays, linked lists are not stored at contiguous memory locations.
 *Advantages of linked lists over arrays*  
 + It is dynamic  
 + Ease of insertion or deletion.  
+
+Dynamic memory allocation is used to create nodes at runtime. For example, for this linked list:
+
+```c
+typedef struct list_s
+{
+	char *str;
+	unsigned int len;
+	struct list_s *next;
+} list_t;
+```
+
+```c
+list_t *new;
+
+new = malloc(sizeof(struct list_s));
+```
+
+can be used to dynamically create memory for a node of a singly linked list. 
 ## Tasks
 
 ## Links
