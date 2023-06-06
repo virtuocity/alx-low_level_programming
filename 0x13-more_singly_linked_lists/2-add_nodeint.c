@@ -9,7 +9,7 @@
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	struct listint_s *new = NULL;
-	
+
 	new = (struct listint_s *)malloc(sizeof(struct listint_s));
 	if (new == NULL)
 		return (NULL);
