@@ -21,7 +21,7 @@ takes in pointer to pointer of head for correct head address derefrencing:
 ```c
 listint_t *head;
 
-add_nodeint(&head, head);
+add_nodeint(&head, 4);
 ```
 &head gives pointer to pointer of head node of SLL.
 
