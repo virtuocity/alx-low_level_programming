@@ -14,9 +14,11 @@ Below is used to create a new node:
 struct listint_s *new = (listint_s *)malloc(sizeof(struct listint_s));
 ```
 
-or an alias from the struct i.e created using typedef keyword, in this case listint_t
+or an alias from the struct i.e created using typedef keyword, in this case listint_t:
 
-function prototype: ```c
+	listint_t *new = (listint_s *)malloc(sizeof(struct listint_s));
+
+function prototype: ```
 listint_t *add_nodeint(listint_t **head, const int n);```
 
 takes in pointer to pointer of head for correct head address derefrencing:
