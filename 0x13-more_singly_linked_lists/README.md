@@ -13,12 +13,12 @@ Below is used to create a new node:
 ```c
 struct listint_s *new = (listint_s *)malloc(sizeof(struct listint_s));
 ```
-function prototype: ```c
+function prototype: ```
 listint_t *add_nodeint(listint_t **head, const int n);```
 
 takes in pointer to pointer of head for correct head address derefrencing:
 
-```c
+```
 listint_t *head;
 
 add_nodeint(&head, 4);
