@@ -15,8 +15,13 @@ void free_listint(listint_t *head)
 	  * to next after freeing each node
 	  */
 	temp = head;
-	while (head != NULL)
+	/* temp now points/holds head address */
+	while (temp != NULL)
 	{
+		/**
+		 *Need for a node pointer to store reference
+		 *to next after freeing each node
+		 */
 		reference = temp->next;
 		free(temp);
 		temp = reference;
