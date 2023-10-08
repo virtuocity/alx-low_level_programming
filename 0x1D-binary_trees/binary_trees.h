@@ -24,4 +24,8 @@ typedef struct binary_tree_s bst_t;
 typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
 
+/* Function prototypes*/
+int _print_t(binary_tree_t *tree, int is_left, int offset, int depth, char s[20][255]);
+void print_t(binary_tree_t *tree);
+
 #endif /* BINARY_TREES */
