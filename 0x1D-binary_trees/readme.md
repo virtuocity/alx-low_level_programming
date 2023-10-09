@@ -42,7 +42,9 @@
 
 ## Notes
 ### A binary tree
-In computer science, a binary tree is a k-ary ,k=2 tree data structure in which each node has at most two children, which are referred to as the left child and the right child. 
+In computer science, a binary tree is a k-ary(no of children) ,k=2 tree data structure in which each node has at most two children, which are referred to as the left child and the right child. 
 
 A recursive definition using just set theory notions is that a (non-empty) binary tree is a tuple (L, S, R), where L and R are binary trees or the empty set and S is a singleton set containing the root
 
+### A binary Search tree
+a binary search tree (BST), also called an ordered or sorted binary tree, is a rooted binary tree data structure with the key of each internal node being greater than all the keys in the respective node's left subtree and less than the ones in its right subtree. The time complexity of operations on the binary search tree is directly proportional to the height of the tree.
