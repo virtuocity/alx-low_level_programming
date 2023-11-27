@@ -18,12 +18,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	fildes = open(filename, 0);
 	if (fildes == -1)
-		return(0);
+		return (0);
 	size = write(STDOUT_FILENO, buf, read(fildes, buf, letters));
 	if (size == -1)
 		return (0);
 	close(fildes);
 	free(buf);
-	return(size);
+	return (size);
 }
 
