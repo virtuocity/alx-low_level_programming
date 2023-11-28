@@ -72,7 +72,7 @@ Read or watch:
 man or help:
 
 + [open](https://man7.org/linux/man-pages/man2/open.2.html)
-close
-read
-write
-dprintf
++ [close](https://man7.org/linux/man-pages/man2/close.2.html)
++ [read](https://man7.org/linux/man-pages/man2/read.2.html)
++ [write](https://man7.org/linux/man-pages/man2/write.2.html)
++ [dprintf/fprintf](https://linux.die.net/man/3/fprintf)
