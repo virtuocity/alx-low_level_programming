@@ -70,6 +70,35 @@ On files that support seeking, the read operation commences at the file offset, 
 If count is zero, read() may detect the errors described below. In the absence of any errors, or if read() does not check for errors, a read() with a count of 0 returns zero and has no other effects.
 
 According to POSIX.1, if count is greater than SSIZE_MAX, the result is implementation-defined; see NOTES for the upper limit on Linux.
+### write()
+
+    #include <unistd.h>
+    ssize_t write(int fd, const void buf[.count], size_t count);
+
+write() writes up to count bytes from the buffer starting at buf
+to the file referred to by the file descriptor fd.
+
+The number of bytes written may be less than count if, for
+example, there is insufficient space on the underlying physical
+medium, or the RLIMIT_FSIZE resource limit is encountered (see
+setrlimit(2)), or the call was interrupted by a signal handler
+after having written less than count bytes.  (See also pipe(7).)
+
+For a seekable file (i.e., one to which lseek(2) may be applied,
+for example, a regular file) writing takes place at the file
+offset, and the file offset is incremented by the number of bytes
+actually written.  If the file was open(2)ed with O_APPEND, the
+file offset is first set to the end of the file before writing.
+The adjustment of the file offset and the write operation are
+performed as an atomic step.
+
+POSIX requires that a read(2) that can be proved to occur after a
+write() has returned will return the new data.  Note that not all
+filesystems are POSIX conforming.
+
+According to POSIX.1, if count is greater than SSIZE_MAX, the
+result is implementation-defined; see NOTES for the upper limit
+on Linux.
 ## Resources
 Read or watch:
 
