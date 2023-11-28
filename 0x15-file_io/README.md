@@ -15,9 +15,11 @@ will access the file on behalf of the process. The process does not have direct 
 ### Open() function
 + Synopsis
 
+```c
     #include <fcntl.h>
     int open(const char *pathname, int flags);  
-    int open(const char *pathname, int flags, mode_t mode);  
+    int open(const char *pathname, int flags, mode_t mode);
+```  
 
 The open() system call opens the file specified by pathname.  If
 the specified file does not exist, it may optionally (if O_CREAT
