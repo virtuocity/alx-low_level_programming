@@ -62,6 +62,25 @@ flags affect the semantics of subsequent I/O operations.  The
 file status flags can be retrieved and (in some cases) modified;
 see fcntl(2) for details.
 
+### close()
+
+    #include <unistd.h>
+    int close(int fd);
+
+#### Description
+close() closes a file descriptor, so that it no longer refers to any file and may be reused. Any record locks (see fcntl(2)) held on the file it was associated with, and owned by the process, are removed (regardless of the file descriptor that was used to obtain the lock).
+If fd is the last file descriptor referring to the underlying open file description (see open(2)), the resources associated with the open file description are freed; if the descriptor was the last reference to a file which has been removed using unlink(2) the file is deleted. 
+
+### dprintf()
+
+    #include <stdio.h>
+    int dprintf(int fildes, const char *restrict format, ...);
+
+The dprintf() function shall be equivalent to the fprintf() function, except that dprintf() shall write output to the file associated with the file descriptor specified by the fildes argument rather than place output on a stream.
+### read()
+
+    #include <unistd.h>
+    ssize_t read(int fd, void buf[.count], size_t count);
 
 ## Resources
 Read or watch:
