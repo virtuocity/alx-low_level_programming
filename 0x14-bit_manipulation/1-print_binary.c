@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_binary - convert decimal to binary
@@ -8,12 +8,13 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i, binary, flag;
+	int i, binary, flag, size;
 
 	flag = 0;
+	size = sizeof(int) * 8;
 	if (n == 0)
 		_putchar('0');
-	for  (i = 63; i >= 0; i--)
+	for  (i = size - 1; i >= 0; i--)
 	{
 		binary = (n >> i);
 		if (binary != 0)

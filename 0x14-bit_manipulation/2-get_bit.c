@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * get_bit - returns the value of a bit at a given index
@@ -9,14 +9,15 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int binary, var;
+	int bit, var;
 
-	binary = 0;
+	bit = 0;
 	var = 0;
 	if (index > 63)
 		return (-1);
-	binary = (n >> index);
-	var = binary & 1;
+	/* right shift decimal by index to get bit at that position*/
+	bit = (n >> index);
+	var = bit & 1;
 	if (var)
 		return (1);
 	else
