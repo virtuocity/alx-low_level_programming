@@ -28,8 +28,8 @@ int create_file(const char *filename, char *text_content)
 	  *buf = malloc(i * sizeof(char));
 	*if (buf == NULL)
 	*	return (-1);
-	* create file 
-	 */
+	* create file
+	*/
 	fd = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
 	if (fd == -1)
 		return (-1);
